@@ -2,32 +2,154 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: aliceblue;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.headerframe{
+    margin-top: 10px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+.left{
+    background-color: white;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    width: 20%;
+    min-height: 100px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(247,  78,  59);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+.right{
+    width: 60%;
+
+
+    min-height: 100px;
+    padding: 10px;
+
+    color: rgb(108, 108, 108);
+
+}
+.headerlogotext{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    letter-spacing: 5.5px;
+    color:rgb(247,  78,  59) ;
+}
+.dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.dot1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(247,  78,  59);
+}
+.dot2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    column-gap: 5px;
+}
+.dot2 .dotmarginer {
+
+
+  
+}
+.dot2 div{
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(247,  78,  59);
+
+}
+.rightframe{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+
+    font-size: 20px;
+
+
+}
+.rightframe div{
+    letter-spacing: 2px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.welcomename{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.welcomeframe{
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    width: 56%;
+    gap: 10px;
+}
+.welcomeslogan{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+.welcomebtn{
+    padding: 10px;
+    background-color: rgb(247,  78,  59);
+    color: white;
+    border-radius: 5px;
+}
+.rightframe div{
+    width: 33.3%;
+    transition: 1s;
+    height: 100px;    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.rightframe div:hover{
+   margin-right: 15px;
+   color: white;
+   background-color: black;
 }
